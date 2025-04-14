@@ -1,0 +1,19 @@
+{
+    "name": "cyberpunk-green-theme",
+    "title": "Cyberpunk Green Theme",
+    "description": "A green-on-black theme for Cyberpunk RED.",
+    "version": "1.0.0",
+    "author": "Pneuma",
+    "compatibility": {
+     "minimum": "11",
+    "verified": "11"
+    },
+    "styles": ["styles/cyberpunk-green-theme.css"],
+    "type": "theme",
+    "manifest": "module.json",
+    "flags": {
+      "core": {
+        "theme": true
+      }
+    }
+  }

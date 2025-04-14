@@ -1,0 +1,283 @@
+/* Cyberpunk RED - Green Theme Overrides */
+
+:root {
+  /* Replace the core red with green */
+  --cpr-color-red: #4d771f;
+
+  /* Optional: tweak background and contrast */
+  --cpr-color-white: #eeeeee;
+  --cpr-background-box: #dddddd;
+  --cpr-background-window: #cccccc;
+  --cpr-background-tab-active: #4d771f;
+  --cpr-text-icon-highlight: #4d771f;
+  --cpr-text-header: #92d050;
+  --cpr-background-border: #4d771f;
+  --cpr-background-chat-card-block: #4d771f;
+  --cpr-text-tab-highlight: #b5ffa1;
+  --cpr-background-chat-card: #1a1a1a;
+
+  /* Optional muted palette adjustments */
+  --cpr-color-light-grey: #cccccc;
+  --cpr-color-dark-grey: #888888;
+  --cpr-background-editor-button: #dddddd;
+  --cpr-background-editor-button-hover: #eeeeee;
+  --cpr-background-editor-button-active: #ffffff;
+  --cpr-text-chat-normal: #222222;
+  --cpr-text-normal: #222222;
+  --cpr-text-window: #222222;
+  --cpr-text-pill: #111111;
+  --cpr-background-pill: #92d050;
+}
+
+/* Add glow to active tabs */
+.tab-label.active {
+  box-shadow: 0 0 8px #4d771f;
+  border: 1px solid #4d771f;
+}
+
+/* Highlight hovered buttons */
+button:hover {
+  box-shadow: 0 0 4px #4d771f;
+  border-color: #4d771f;
+}
+
+/* Green glow for pause screen glitch effect */
+#pause .pause-glitch::before,
+#pause .pause-glitch::after {
+  text-shadow: -0.125rem 0 #4d771f;
+}
+
+/* Alternating skill rows */
+.items-list .item:nth-child(even) {
+  background-color: #eeeeee !important;
+}
+
+.items-list .item:nth-child(odd) {
+  background-color: #cccccc !important;
+}
+
+/* Ensure text is dark enough in light rows */
+.items-list .item {
+  color: #111 !important;
+  font-size: small;
+}
+
+/* Input background fix for light rows */
+.items-list .item input.skill-input {
+  background-color: #ffffff;
+  color: #111111;
+  border: 1px solid #999;
+}
+
+/* Fix for tab icons (Skills, Gear, Cyber, Effects) */
+.sheet nav.sheet-tabs .item i {
+  color: #4d771f !important;
+}
+
+/* Fix tab pink underlay animation */
+.sheet nav.sheet-tabs .item::after {
+  background: #4d771f !important;
+}
+
+/* Override pink underlay div */
+.tab-pink-underlay {
+  background-color: #92d050 !important;
+}
+
+/* Dialog sheet styling fix */
+.dialog-sheet {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-radius: 8px;
+  padding: 1em;
+}
+
+.dialog-sheet input[type="number"],
+.dialog-sheet input[type="text"] {
+  background-color: #ffffff;
+  color: #111;
+  border: 1px solid #999;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+.dialog-sheet select,
+.sheet select {
+  appearance: auto;
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  border: 1px solid #999;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+.dialog-sheet select option,
+.sheet select option {
+  background-color: #ffffff;
+  color: #111111;
+}
+.sheet select optgroup {
+  background-color: #111111;
+  color: #92d050;
+}
+
+.dialog-sheet .dialog-item.flexrow:nth-child(even) {
+  background-color: #eeeeee !important;
+}
+
+.dialog-sheet .dialog-item.flexrow:nth-child(odd) {
+  background-color: #cccccc !important;
+}
+
+.dialog-footer .cpr-dialog-button {
+  background-color: #4d771f;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+}
+
+.dialog-footer .cpr-dialog-button:hover {
+  background-color: #92d050;
+  color: #000;
+}
+
+/* Effects list styling to remove lingering pink */
+.effects-list .effects-category.item-header {
+  background-color: #92d050 !important;
+  color: #92d050 !important;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 0.25em 0.5em;
+}
+
+.effects-list .item.effect:nth-child(even) {
+  background-color: #eeeeee !important;
+}
+
+.effects-list .item.effect:nth-child(odd) {
+  background-color: #cccccc !important;
+}
+
+.effects-list .effect-name .text-pill {
+  background-color: #000000;
+  color: #92d050;
+  border-radius: 4px;
+  padding: 0.1em 0.4em;
+  display: inline-block;
+}
+
+/* Chat Message Styling */
+.chat-message {
+  border: 2px solid #4d771f !important;
+  background-color: #c0c0c0 !important;
+  color: #000000 !important;
+  border-radius: 8px;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Chat Message Header */
+.chat-message .message-header {
+  background-color: #c0c0c0 !important;
+  color: #000000 !important;
+  border-bottom: 1px solid #4d771f;
+  padding: 0.2em;
+  border-radius: 4px 4px 0 0;
+}
+
+/* Chat Message Sender Name */
+.chat-message .message-sender {
+  color: #4d771f !important;
+  font-weight: bold;
+}
+
+/* Chat Portrait Border */
+.chat-message img.chat-portrait-message-portrait-generic {
+  border: 2px solid #4d771f !important;
+  border-radius: 50%;
+}
+
+/* Rollcard Styling */
+.rollcard {
+  background-color: #c0c0c0 !important;
+  /* border: 1px solid #4d771f !important; */
+  border-radius: 8px;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+/* Rollcard Title */
+.rollcard .chat-rollTitle-stat {
+  background-color: #4d771f !important;
+  color: #000000 !important;
+  border-bottom: 1px solid #4d771f;
+  padding: 0.5em;
+  border-radius: 4px 4px 0 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Dice Image */
+.rollcard .d6-dice-div img {
+  filter: hue-rotate(90deg); /* Adjusts the hue to match the green theme */
+  width: 48px;
+  height: 48px;
+}
+
+/* Dice Number */
+.dice-total {
+  color: #4d771f !important;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+.window-content{
+  background-color: #cccccc !important;
+  color: #000000 !important;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+
+
+/* Make only .directory-list text black */
+.directory-list .entry-name,
+.directory-list .entry-name a {
+  color: #ffffff !important;
+}
+
+
+
+
+.subdirectory .directory-item.compendium {
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  position: relative;
+  z-index: 1;
+}
+.subdirectory .directory-item.compendium .entry-name {
+  color: #ffffff !important;
+}
+.entry-name,
+.entry-name a {
+  color: #ffffff !important;
+}
+
+/* Override: inside open compendium view, make item names black */
+.compendium.directory .directory-list .entry-name,
+.compendium.directory .directory-list .entry-name a {
+  color: #000000 !important;
+}
+
+/* Journal sidebar page list text */
+.journal-sheet-container .journal-sidebar .directory-list .page-heading,
+.journal-sheet-container .journal-sidebar .directory-list .page-heading .page-number,
+.journal-sheet-container .journal-sidebar .directory-list .page-heading .page-title,
+.journal-sheet-container .journal-sidebar .directory-list .heading-link {
+  color: #000000 !important;
+}
