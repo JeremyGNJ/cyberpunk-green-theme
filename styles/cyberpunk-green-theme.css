@@ -289,44 +289,7 @@ button:hover {
 
 /
 
-/* === D10 Chat Dice Override (Red + Black) === */
 
-/* Roll of 1 - Fumble */
-img.d10[src*="/red/d10_1.svg"],
-img.d10[src*="/black/d10_1.svg"] {
-  content: url("modules/cyberpunk-green-theme/dice/D10_1_fail.png");
-}
-
-/* Roll of 10 - Critical */
-img.d10[src*="/red/d10_10_preem.svg"],
-img.d10[src*="/black/d10_10_preem.svg"] {
-  content: url("modules/cyberpunk-green-theme/dice/D10_10_preem.png");
-}
-
-/* Rolls 2–9 */
-img.d10[src*="/red/d10_2.svg"],
-img.d10[src*="/black/d10_2.svg"] {
-  content: url("modules/cyberpunk-green-theme/dice/D10_2.png");
-}
-
-img.d10[src*="/red/d10_3.svg"],
-img.d10[src*="/black/d10_3.svg"] {
-  content: url("modules/cyberpunk-green-theme/dice/D10_3.png");
-}
-
-img.d10[src*="/red/d10_4.svg"],
-img.d10[src*="/black/d10_4.svg"] {
-  content: url("modules/cyberpunk-green-theme/dice/D10_4.png");
-}
-
-img.d10[src*="/red/d10_5.svg"],
-img.d10[src*="/black/d10_5.svg"] {
-  content: url("modules/cyberpunk-green-theme/dice/D10_5.png");
-}
-{
-img.d10[src*="/red/d10_6.svg"],
-img.d10[src*="/black/d10_6.svg"] 
-}
 /* ==== KILL PINK + FORCE ALT ROWS FOR JOURNAL TABLES (VIEW + EDIT) ==== */
 .journal-entry .journal-page-content table,
 .editor-content .ProseMirror table,
