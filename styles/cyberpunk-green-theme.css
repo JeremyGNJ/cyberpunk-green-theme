@@ -32,7 +32,7 @@
 /* Add glow to active tabs */
 .tab-label.active {
   box-shadow: 0 0 8px #4d771f;
-  border: 1px solid #4d771f;
+
 }
 
 /* Highlight hovered buttons */
@@ -53,7 +53,7 @@ button:hover {
 }
 
 .items-list .item:nth-child(odd) {
-  background-color: #cccccc !important;
+  background-color: #dddddd !important;
 }
 
 /* Ensure text is dark enough in light rows */
@@ -61,7 +61,12 @@ button:hover {
   color: #111 !important;
   font-size: small;
 }
-
+/* Black background for effect category headers (e.g., Permanent Effects) */
+.tab.effects-tab .effects-category.item-header {
+  background-color: #000000 !important;
+  color: #92d050 !important;
+  font-weight: bold;
+}
 /* Input background fix for light rows */
 .items-list .item input.skill-input {
   background-color: #ffffff;
@@ -280,4 +285,111 @@ button:hover {
 .journal-sheet-container .journal-sidebar .directory-list .page-heading .page-title,
 .journal-sheet-container .journal-sidebar .directory-list .heading-link {
   color: #000000 !important;
+}
+
+/
+
+/* === D10 Chat Dice Override (Red + Black) === */
+
+/* Roll of 1 - Fumble */
+img.d10[src*="/red/d10_1.svg"],
+img.d10[src*="/black/d10_1.svg"] {
+  content: url("modules/cyberpunk-green-theme/dice/D10_1_fail.png");
+}
+
+/* Roll of 10 - Critical */
+img.d10[src*="/red/d10_10_preem.svg"],
+img.d10[src*="/black/d10_10_preem.svg"] {
+  content: url("modules/cyberpunk-green-theme/dice/D10_10_preem.png");
+}
+
+/* Rolls 2–9 */
+img.d10[src*="/red/d10_2.svg"],
+img.d10[src*="/black/d10_2.svg"] {
+  content: url("modules/cyberpunk-green-theme/dice/D10_2.png");
+}
+
+img.d10[src*="/red/d10_3.svg"],
+img.d10[src*="/black/d10_3.svg"] {
+  content: url("modules/cyberpunk-green-theme/dice/D10_3.png");
+}
+
+img.d10[src*="/red/d10_4.svg"],
+img.d10[src*="/black/d10_4.svg"] {
+  content: url("modules/cyberpunk-green-theme/dice/D10_4.png");
+}
+
+img.d10[src*="/red/d10_5.svg"],
+img.d10[src*="/black/d10_5.svg"] {
+  content: url("modules/cyberpunk-green-theme/dice/D10_5.png");
+}
+{
+img.d10[src*="/red/d10_6.svg"],
+img.d10[src*="/black/d10_6.svg"] 
+}
+/* ==== KILL PINK + FORCE ALT ROWS FOR JOURNAL TABLES (VIEW + EDIT) ==== */
+.journal-entry .journal-page-content table,
+.editor-content .ProseMirror table,
+.editor-container .editor-content .ProseMirror table,
+.editor-container .editor-content .ProseMirror tbody,
+.editor-container .editor-content .ProseMirror tr,
+.editor-container .editor-content .ProseMirror td,
+.editor-container .editor-content .ProseMirror th {
+  border-collapse: collapse !important;
+  width: 100%;
+  background-color: transparent !important;
+  border: none !important;
+  color: #000000 !important;
+  border-color: #4c771f !important;
+}
+
+/* Table cells */
+.journal-entry .journal-page-content td,
+.journal-entry .journal-page-content th,
+.editor-content .ProseMirror td,
+.editor-content .ProseMirror th,
+.editor-container .editor-content .ProseMirror td,
+.editor-container .editor-content .ProseMirror th {
+  background-color: transparent !important;
+  color: #000000 !important;
+  border: 1px solid #4c771f !important;
+  padding: 4px 6px;
+}
+
+/* Remove any table cell pink or white background */
+.journal-entry .journal-page-content td[style],
+.journal-entry .journal-page-content th[style],
+.editor-content .ProseMirror td[style],
+.editor-content .ProseMirror th[style],
+.editor-container .editor-content .ProseMirror td[style],
+.editor-container .editor-content .ProseMirror th[style] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Alternate rows - even/odd with lighter greys */
+.journal-entry .journal-page-content tr:nth-child(odd),
+.editor-content .ProseMirror tr:nth-child(odd),
+.editor-container .editor-content .ProseMirror tr:nth-child(odd) {
+  background-color: #cccccc !important;
+}
+.journal-entry .journal-page-content tr:nth-child(even),
+.editor-content .ProseMirror tr:nth-child(even),
+.editor-container .editor-content .ProseMirror tr:nth-child(even) {
+  background-color: #eeeeee !important;
+}
+
+/* Header row logic - keep green */
+.journal-entry .journal-page-content tr:first-child,
+.editor-content .ProseMirror tr:first-child,
+.editor-container .editor-content .ProseMirror tr:first-child {
+  background-color: #4c771f !important;
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+/* Chat mode indicator (e.g., OOC, GM) */
+.chat-message .chat-mode-indicator {
+  background-color: #000000 !important; /* Black background */
+  color: #ff4444 !important;            /* Red text */
 }
