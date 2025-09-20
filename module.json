@@ -6,7 +6,7 @@
     "author": "Pneuma",
     "compatibility": {
      "minimum": "11",
-    "verified": "11"
+    "verified": "12"
     },
     "styles": ["styles/cyberpunk-green-theme.css"],
     "type": "theme",
@@ -17,3 +17,4 @@
       }
     }
   }
+
